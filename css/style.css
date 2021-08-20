@@ -1,0 +1,113 @@
+/* Imports Poppins Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Set Universal margin padding  */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+body {
+  background-color: rgba(245, 245, 245, 0.2);
+}
+.product-container {
+  width: 75%;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3rem;
+  /* overflow-x: hidden; */
+  /* overflow-y: scroll; */
+}
+/* Styling Left Column */
+.left-column {
+  display: flex;
+  justify-content: flex-end;
+}
+.left-column > img {
+  width: 400px;
+  height: 400px;
+  /* position: sticky;
+  top: 5px; */
+}
+/* Styling Right Column */
+.right-column {
+  height: 85vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.right-column > article > h1 {
+  font-size: 3rem;
+  line-height: 100%;
+  padding-bottom: 2rem;
+}
+h3 {
+  /* font-size: 1.25rem; */
+  padding-bottom: 0.25rem;
+}
+.right-column button,
+input {
+  padding: 0.4rem 0.5rem;
+  margin-right: 0.4rem;
+  font-size: 1em;
+  background-color: white;
+  border-width: thin;
+  border-radius: 5px;
+}
+
+table,
+td {
+  font-size: 1.1em;
+  font-weight: 600;
+  padding: 0.2rem 3rem 0.2rem 0.5rem;
+  border-bottom: 0.2px solid #80808085;
+  border-collapse: collapse;
+}
+.delivery-td td {
+  border-bottom: 2px solid #000000;
+}
+.promo {
+  padding: 2rem 0 0 0;
+}
+.submit-btn {
+  background-color: red !important;
+  color: #fff;
+  padding: 0.4rem 1.5rem !important;
+  border: none;
+  font-size: 1.2rem !important;
+}
+.promo p {
+  font-weight: 600;
+}
+.total-cost {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.total-cost h1 > span,
+.total-cost > h1 {
+  font-size: 3.5rem;
+  margin: auto;
+  font-weight: 400;
+}
+
+.ruler {
+  width: 75%;
+  margin: 0 auto;
+}
+
+button:hover {
+  background-color: rgba(245, 245, 245, 0.356);
+  color: #000000ad;
+}
+button:active {
+  background-color: #e9e8c42f;
+  transform: translateY(1.1px);
+}
