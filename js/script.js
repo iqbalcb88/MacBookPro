@@ -50,12 +50,16 @@ document
   });
 
 function verifyPromo() {
-  const promoCode = document.getElementById('promo-code').value;
+  const promoCode = document.getElementById('promo-code');
+  promoCodeValue = promoCode.value;
 
-  if (promoCode.toLowerCase() == 'stevekaku') {
+  if (promoCodeValue.toLowerCase() == 'stevekaku') {
     document.getElementById('total-cost').innerText =
       subTotal() - (subTotal() * 20) / 100;
     document.getElementById('total-price').innerText =
       subTotal() - (subTotal() * 20) / 100;
+    promoCode.style.color = 'green';
+  } else {
+    promoCode.style.color = 'red';
   }
 }
