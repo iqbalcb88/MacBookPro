@@ -59,6 +59,7 @@ function verifyPromo() {
     document.getElementById('total-price').innerText =
       subTotal() - (subTotal() * 20) / 100;
     promoCode.style.color = 'green';
+    promoCode.disabled = true;
   } else {
     promoCode.style.color = 'red';
   }
