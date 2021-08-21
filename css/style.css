@@ -42,6 +42,9 @@ body {
   align-items: flex-start;
   flex-direction: column;
 }
+.storage {
+  margin: 3rem 0;
+}
 .right-column > article > h1 {
   font-size: 3rem;
   line-height: 100%;

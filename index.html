@@ -28,24 +28,34 @@
           </article>
 
           <!-- Configuration Section -->
-          <div class="memory">
-            <h3>Memory</h3>
-            <button id="memory-8gb" type="button">8GB unified memory</button>
-            <button id="memory-16gb" type="button">16GB unified memory</button>
-          </div>
-          <div class="storage">
-            <h3>Storage</h3>
-            <button id="storage-256gb" type="button">256GB SSD storage</button
-            ><button id="storage-512gb" type="button">512GB SSD storage</button
-            ><button id="storage-1tb" type="button">1TB SSD storage</button>
-          </div>
-          <div class="delivery-method">
-            <h3>Choose Your Delivery Option</h3>
-            <button id="free-delivary" type="button">
-              Friday, Aug 25 Free Prime Delivery</button
-            ><button id="paid-delivery" type="button">
-              Friday, Aug 21 Delivery Charge $20
-            </button>
+          <div id="extra-facilities">
+            <div class="memory">
+              <h3>Memory</h3>
+              <button id="memory-8gb" type="button" name="memory-8gb">
+                8GB unified memory
+              </button>
+              <button id="memory-16gb" type="button" name="memory-16gb">
+                16GB unified memory
+              </button>
+            </div>
+            <div class="storage">
+              <h3>Storage</h3>
+              <button id="storage-256gb" type="button" name="ssd-256gb">
+                256GB SSD storage</button
+              ><button id="storage-512gb" type="button" name="ssd-512gb">
+                512GB SSD storage</button
+              ><button id="storage-1tb" type="button" name="ssd-1tb">
+                1TB SSD storage
+              </button>
+            </div>
+            <div class="delivery-method">
+              <h3>Choose Your Delivery Option</h3>
+              <button id="free-delivary" type="button" name="free-system">
+                Friday, Aug 25 Free Prime Delivery</button
+              ><button id="paid-delivery" type="button" name="paid-system">
+                Friday, Aug 21 Delivery Charge $20
+              </button>
+            </div>
           </div>
           <!--Calculation Section  -->
           <div class="calculation-section">
@@ -77,9 +87,7 @@
             <div class="promo">
               <p>Add Promo Code</p>
               <input type="text" id="promo-code" />
-              <button id="verify-promo" class="submit-btn" type="submit">
-                Apply
-              </button>
+              <button onclick="verifyPromo()" class="submit-btn">Apply</button>
             </div>
           </div>
         </div>
